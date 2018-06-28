@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>header_layout</title>
+<style>
+/*-----------------------------------------------------------reset*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+img {display:block; text-decoration:none;}
+
+body {width:1500px;
+			margin:0 auto;}
+
+/*-----------------------------------------------------------header*/
+#header {width:1500px; margin:0 auto;
+				   background-color:lightgray;
+				   position:relative;
+				   z-index:1;}
+				   
+.ovflw {overflow:hidden;}
+				   
+.logo {width:200px; height:200px;
+			padding:10px;
+			float:left;
+			cursor:pointer;}
+			
+.nav_search {width:770px; height:200px;
+						float:right;
+						margin-right:10px;
+						background-color:lightgray;}
+	
+
+.gnb_bar {overflow:hidden;}
+					
+.gnb {overflow:hidden;
+			width:400px; float:right;
+			padding:10px;}
+						
+.gnb li {width:100px; height:30px;
+			/*border:1px solid black; box-sizing:border-box;*/
+			text-align:center; line-height:30px;
+			float:left;
+			cursor:pointer;}
+			
+.gnb li:hover {color:gray;}	
+			
+.search_bar {overflow:hidden;
+						margin-top:10px;}
+									
+#keyword {width:300px; height:30px;
+			text-align:center; line-height:30px;
+			float:right;
+			border:1px solid black; box-sizing:border-box;
+			position:relative;
+			margin-right:10px;}
+			
+			
+/*-----------------------------------------------------------------lnb*/
+
+.lnb_bar {margin:10px 0;}
+
+.lnb:after {content:''; display:block; clear:both;}			
+
+.lnb li {width:100px; height:50px;
+			text-align:center; line-height:50px;
+			float:right;
+			background-color:pink; color:black;
+			cursor:pointer;}
+			
+
+
+.lnb li li {display:none;}
+.lnb li:hover {color:white;}	
+.lnb li:hover li {display:block;}				
+
+/*-----------------------------------------------------------------visual main */	
+.visual_main{width:1000px;
+						margin:10px auto;}
+						
+/*-----------------------------------------------------------------event */
+.event {overflow:hidden;
+              padding:50px 0;
+			  background-color:#FCC}	
+
+.eve{width:300px; height:300px;
+		float:left;
+		/* border:1px solid black; */ 
+		box-sizing:border-box;
+		cursor:pointer;}
+		
+.eve02 {margin:0 50px;} 				
+
+/*-------------------------------------------------------------------------------- */
+#chk01, #chk02 {display:none;}
+
+/*-------------------------------------------------------------------------------- */
+#chk01 ~ .sheet01 {display:none;}
+#chk01:checked ~ .sheet01 {display:block;}
+
+#chk02 ~ .sheet02 {display:none;}
+#chk02:checked ~ .sheet02 {display:block;}
+
+/*-------------------------------------------------------------------------------- */
+.title {overflow:hidden;}
+
+.title label {width:100px; height:50px;
+			background-color:gray; color:white;
+			text-align:center; line-height:50px;
+			display:block; float:left;
+			border-radius:2px 2px 0 0}
+
+#chk01:checked ~ .title .btn01{background-color:lightgray; color:gray;}
+#chk02:checked ~ .title .btn02{background-color:lightgray; color:gray;}
+
+
+.sheet {width:1000px; height:300px;
+				background-color:lightgray; color:white;
+				font-size:36px;
+				text-align:center; line-height:500px;
+				border-radius: 0 2px 2px 2px;}
+					
+
+/*-------------------------------------------------------------------------------- aside */
+.wrap {float:left; width:1000px; margin-right:20px;}
+
+.asd {padding:5px; overflow:hidden;}
+.asd01 img {cursor:pointer;}
+.asd02 img {cursor:pointer;}
+.asd03 img {cursor:pointer;}
+
+
+.text {margin-top:5px;
+			text-align:justify;
+			text-indent:32px;
+			width:400px; height:75px;
+			margin-right:10px;
+			border:1px solid white; box-sizing:border-box;
+			float:left;
+			background-color:lightgray;}
+			
+.text_01 {white-space:nowrap;
+					overflow:hidden;
+					text-overflow:ellipsis;}
+.text_02 {white-space:nowrap;
+					overflow:hidden;
+					text-overflow:ellipsis;}
+.text_03 {white-space:nowrap;
+					overflow:hidden;
+					text-overflow:ellipsis;}
+					
+.footer{width:1500px; margin:0 auto;
+				   background-color:lightgray;
+				   overflow:hidden;
+				   padding:20px;}
+
+</style>
+</head>
+
+
+
+
+
+
+<body>
+
+<!------------------------------------------header--->
+
+<header id="header">
+ <section class="ovflw">
+       <div class="logo">
+  		  <img src="candlelogo.png">
+	   </div>
+       
+       
+       <div class="nav_search">
+         <nav class="gnb_bar">
+         <ul class="gnb">
+        	<li>회원가입</li>
+            <li>로그인</li>
+            <li>장바구니</li>
+            <li>매장위치</li>
+             </ul>
+             </nav>
+       
+       <div class="search_bar">
+     		<div class="box">
+            <label for="keyword"> </label>
+            <input type="search" id="keyword" placeholder="search">
+             </div>
+       </div>
+    </div>
+    </section>
+    
+ 
+	<nav class="lnb_bar">
+    	<ul class="lnb">
+				<li>Candles
+                 	<ul>
+                    		<li>menu01_1 </li>
+                            <li>menu01_2 </li>
+                            <li>menu01_3 </li>
+                     </ul>
+                  </li>  
+                  
+			<li>Diffusers
+                 	<ul>
+                    		<li>menu02_1 </li>
+                            <li>menu02_2 </li>
+                            <li>menu02_3 </li>
+                     </ul>
+                  </li>  
+ 			<li>Small Spaces
+                 	<ul>
+                    		<li>menu03_1 </li>
+                            <li>menu03_2 </li>
+                            <li>menu03_3 </li>
+                     </ul>
+                  </li>  
+			<li>Accessories
+                 	<ul>
+                    		<li>menu04_1 </li>
+                            <li>menu04_2 </li>
+                            <li>menu04_3 </li>
+                     </ul>
+                  </li>  
+                  
+			<li>Gift Sets
+                 	<ul>
+                    		<li>menu05_1 </li>
+                            <li>menu05_2 </li>
+                            <li>menu05_3 </li>
+                     </ul>
+                  </li>                       
+     
+     </ul>
+     </nav>
+</header>
+
+
+
+<ul class="wrap">
+<div class="visual_main">
+		<img src="candle.jpg">
+</div>
+
+<section class="event">
+	<div class="eve eve01">
+    	<img src="color_candles.jpg" width="300px" height="300px">
+    </div>
+    <div class="eve eve02">
+    	<img src="art-beauty-business-278664.jpg" width="300px" height="300px">
+    </div>
+    <div class="eve eve03">
+    	<img src="beautiful-bloom-blossom-768939.jpg" width="300px" height="300px">
+    </div>
+</section>
+
+<input type="radio" id="chk01" name="tap" checked>
+<input type="radio" id="chk02" name="tap">
+
+
+<div class="title">
+	<label for="chk01" class="btn01"> 공지사항 </label>
+    <label for="chk02" class="btn02"> Q&amp;A </label>
+</div>
+
+
+<div class="sheet sheet01">
+	<h4>공지사항</h4>
+</div>
+
+<div class="sheet sheet02">
+	<h4>Q&amp;A</h4>
+</div>
+
+</ul>
+
+
+
+
+<aisde class="asd">
+	<div class="asd asd01">
+    	 <img src="1.JPG">
+            <h4><div class="text text_01">어 캄 앤 콰이어트 플레이스
+은은하게 나는 달콤한 바닐라 향이 블렌딩 되어있어 누구나 무난하게 사용할 수 있는 향이에요. 개인적으로 달콤한 향은 금방 질려서 안좋아하는데 은은해서 마음에 드네요. 특히 파스텔톤의 은은한 컬러라 왠지 더 편안한 느낌을 주는 어 캄 앤 콰이어트 플레이스</div></h4>
+
+<div><img src="search.jpg"></div>   
+    </div>
+<br>
+<br>
+
+    <div class="asd asd02">
+    	 <img src="2.JPG">
+
+         <h4><div class="text text_02">스위트 낫띵 신향이 달콤해!
+신향 스위트 낫띵! 이름부터 달콤하지 않나요? 향은 편안하면서도 달콤한 그래서 더 사랑스러운 향이지요. 손님이 오시기 전이나 포도군과 여유로운 주말을 보낼 때 분위기 있게 틀어 놓으면 딱이더라고요. 캔들워머를 사용했을 때 삼십분 정도 켜 놓으니 윗부분이 다 녹았네요.</div></h4>
+<div><img src="search.jpg"></div>	
+    </div>
+    
+<br>
+<br>
+
+    <div class="asd asd03">
+    	   <img src="3.JPG">
+
+           <h4><div class="text text_03">기분좋은 선물
+양키캔들은 인체 무해한 식용등급 왁스로 만들어졌다고 해요. 오렌지 빛 딜리셔스 구아바는 달달하면서도 향긋함이 있는 향이라고 할까요? 예뻐서 태우기 아까울 거 같아요. 요즘 향으로 읽히는 느낌들을 중요시 여겨서 향기로 기억되는 마케팅도 매우 중요한 것 같아요.  </div></h4>
+    <div><img src="search.jpg"></div></div>
+</aside>
+
+
+<br>
+<br>
+
+<footer class="footer">
+FOOTER
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>float_header</title>
+<style>
+/*----------------------reset----------------------*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+/*----------------------nav----------------------*/
+#header {width:1000px;
+			 background-color:#6A6A6A;
+			 margin:0 auto;}
+			 
+.gnb_bar {width:1000px;
+			 overflow:hidden;}				 
+			 
+.gnb {width:400px; height:30px;
+		color:#FFF;
+		float:right;} /*logo가 치고 올라오므로 float 자식을 가진 부모에게 속성을 주어야 함. → 부모 만들어주기*/
+		
+.logo {width:200px; height:200px;
+		border:1px solid white; box-sizing:border-box; background-color:#FFF;
+		color:grey; text-align:center; line-height:200px;
+		margin:10px auto;}
+		
+.lnb {width:1000px; height:50px;
+		margin:0 auto;}
+
+ul li {float:left;}
+
+.gnb_menu {width:80px; height:30px;
+				text-align:center; line-height:30px;
+				font-size:14px;
+				cursor:pointer;}
+				
+.lnb_menu {width:200px; height:50px;
+				text-align:center; line-height:50px;
+				color:white;
+				cursor:pointer;}				
+				
+li li {width:200px; height:50px;
+	  background-color:#F6F6F6; color:grey;
+	  display:none;
+	  cursor:pointer;}	
+
+li:hover li {display:block;}	  			
+				
+/*position 보다 제어 쉬움*/
+
+</style>
+</head>
+
+<body>
+
+<header id="header">
+
+<div class="gnb_bar">
+	<nav class="gnb">
+       <ul>
+       		<li class="gnb_menu"> gnb01 </li>
+            <li class="gnb_menu"> gnb02 </li>
+            <li class="gnb_menu"> gnb03 </li>
+            <li class="gnb_menu"> gnb04 </li>
+            <li class="gnb_menu"> gnb05 </li>
+        </ul>    
+	</nav>
+</div>
+
+<div class="logo">
+	logo
+</div>
+
+<nav class="lnb">
+	<ul>
+    	<li class="lnb_menu"> menu01
+        	<ul>
+            	<li>menu01_01</li>
+                <li>menu01_02</li>
+                <li>menu01_03</li>
+            </ul> </li>
+        <li class="lnb_menu"> menu02
+        	<ul>
+            	<li>menu02_01</li>
+                <li>menu02_02</li>
+                <li>menu02_03</li>
+            </ul> </li>
+        <li class="lnb_menu"> menu03 
+        	<ul>
+            	<li>menu03_01</li>
+                <li>menu03_02</li>
+                <li>menu03_03</li>
+             </ul> </li>
+        <li class="lnb_menu"> menu04
+        	<ul>
+            	<li>menu04_01</li>
+                <li>menu04_02</li>
+                <li>menu04_03</li>
+            </ul> </li>
+		<li class="lnb_menu"> menu05
+        	<ul>
+            	<li>menu05_01</li>
+                <li>menu05_02</li>
+                <li>menu05_03</li>
+            </ul> </li>
+	</ul>
+</nav>
+
+</header>
+
+</body>
+</html>

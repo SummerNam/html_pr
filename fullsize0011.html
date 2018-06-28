@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>fullsize</title>
+<style>
+/*--------------------------------------------------- reset*/
+
+* {margin:0; padding:0;}
+li {list-style:none;}
+/*--------------------------------------------------- header*/
+
+#header {position:relative;}
+
+.lnb {width:100%;
+		background-color:black;}
+
+.lnb>ul {width:1000px; margin:0 auto;}
+
+.lnb li{width:200px; height:50px;
+			text-align:center; line-height:50px;
+			background-color:lightgray; color:black;
+			float:left;}
+
+.lnb ul:after {content:''; display:block; clear:both;}   /* 기억할 것, float 위에 걸기 */
+			
+.lnb li li {display:none;}			
+.lnb li:hover li {display:block;}
+/*--------------------------------------------------- visual_main*/
+
+.visual_ex {width:100%; background-color:pink;
+					margin-top:20px;}
+
+.visual_main {width:800px; margin:0 auto;}
+
+
+
+</style>
+</head>
+
+<body>
+<header id="header">
+	<nav class="lnb">
+    	<ul>
+        	<li>menu01
+            	<ul>
+                	<li>menu01-1</li>
+                    <li>menu01-2</li>
+                    <li>menu01-3</li>
+                    <li>menu01-4</li>
+                    <li>menu01-5</li>
+                 </ul>
+             </li>
+             
+             <li>menu02
+            	<ul>
+                	<li>menu02-1</li>
+                    <li>menu02-2</li>
+                    <li>menu02-3</li>
+                    <li>menu02-4</li>
+                    <li>menu02-5</li>
+                 </ul>
+             </li>
+             
+             <li>menu03
+            	<ul>
+                	<li>menu03-1</li>
+                    <li>menu03-2</li>
+                    <li>menu03-3</li>
+                    <li>menu03-4</li>
+                    <li>menu03-5</li>
+                 </ul>
+             </li>
+             
+             <li>menu04
+            	<ul>
+                	<li>menu04-1</li>
+                    <li>menu04-2</li>
+                    <li>menu04-3</li>
+                    <li>menu04-4</li>
+                    <li>menu04-5</li>
+                 </ul>
+             </li>
+             
+             <li>menu05
+            	<ul>
+                	<li>menu05-1</li>
+                    <li>menu05-2</li>
+                    <li>menu05-3</li>
+                    <li>menu05-4</li>
+                    <li>menu05-5</li>
+                 </ul>
+             </li>
+          </ul>
+       </nav>
+</header>
+
+<div class="visual_ex">
+	<div class="visual_main">
+    	<img src="800_400.jpg">
+     </div>
+</div>
+
+
+</body>
+</html>

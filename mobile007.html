@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-sclae=1.0, user-scalable=no">
+<title>mobile007</title>
+<style>
+* {margin:0; padding:0}
+
+#header, #footer {background-color:black; color:white;
+									text-align:center;}
+
+#footer {position:fixed; left:0; bottom:0;
+				width:100%}
+
+
+.event {border:1px solid black; box-sizing:border-box;}
+.eve {height:100px;}
+.eve01 {background-color:pink;}
+.eve02 {background-color:yellow;}
+
+
+.notice {border:1px solid black; box-sizing:border-box;
+				overflow:hidden;}
+.not {width:50%; height:200px;
+			float:left;}
+.not01{background-color:blue;}
+.not02{background-color:green;}
+
+@media only screen and (min-width:321px) and (orientation:landscape) {
+		.event {width:70%; float:left;}
+		.notice {width:30%; float:left;}
+		.not {width:100%; height:100px; float:none;}
+}
+
+</style>
+</head>
+
+<body>
+	<header  id="header">
+    	<h1>header</h1>
+
+    </header>
+
+			<section class="wrap">
+            	<section class="event">
+                	<div class="eve eve01">
+                    	event01
+                    </div>
+                    
+                    <div class="eve eve02">
+                    	event02
+                    </div>
+                 </section>
+            </section>
+            
+            <section class="notice">
+            	<div class="not not01">
+               	 notice01
+                </div>
+                
+                <div class="not not02">
+                	notice02
+                </div>
+			</section>
+            
+	<footer id="footer">
+    	<h2>footer</h2>
+
+    </footer>
+    
+</body>
+</html>

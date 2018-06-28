@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sign_in</title>
+<style>
+/*-------------------------------------------------------------------------------- reset */
+li {list-style:none;}
+a {color:black; text-decoration:none;}
+li {float : left;}
+
+
+/*-------------------------------------------------------------------------------- style */
+p>button {background-color:#3469b2; color:white; 
+					width:150px; height:35px; 
+					text-align:center; font-size:14px;}
+					
+div>textarea {background-color:#CCC;}
+
+</style>
+</head>
+
+
+
+
+<body>
+<ul>
+<a href="#"><h1 align="center"> KANTI </h1></a>
+<!-- 추후에 로고 넣기 : img src 이용 -->
+
+<div class="signin" align="right">
+	<a href="#"> 계정 생성 </a>
+</div>
+
+<hr color="black" noshade>
+
+<br>
+<li>
+    	<p>&nbsp; &nbsp;<label for="userID">이름<br></label>&nbsp;
+<input type="text"  id="userID" name="userID"  size="10" required autofocus autocomplete="on" ></p>
+        <p>&nbsp; &nbsp;<label for="userPW">비밀번호<br></label>&nbsp; <input type="text" id="userPW" name="userPW" maxlength="15" required ></p>
+        <p>&nbsp; &nbsp;<label for="userPW">비밀번호 확인<br></label>&nbsp; <input type="text" id="userPW" name="userPW" maxlength="15" required ></p>
+        <p>&nbsp; &nbsp;<label for="userEmail">이메일<br></label>&nbsp; <input type="email" id="userEmail" required autocomplete="on" ></p>
+        <p>&nbsp; &nbsp;<label for="address">주소(선택항목)<br>
+</label>&nbsp; <input type="text" id="address" ></p>
+  
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+
+
+    
+
+
+<br>
+<div>
+&nbsp; &nbsp; &nbsp;
+<input type="radio" name="gender" id="female" checked> 
+<label for="female">여성</label>
+<input type="radio" name="gender" id="male">
+<label for="male">남성</label>
+</div>
+<br>
+<br>
+
+&nbsp; &nbsp;<input type="checkbox" name="확인" value="a1"> 본인은 아래 이용 약관을 읽었으며 다음과 같이 처리함에 동의합니다.
+
+<br>
+<br>
+
+
+<div> &nbsp; &nbsp; &nbsp; &nbsp;
+<textarea cols="50" rows="5" name="content">
+개인 정보의 선택적 수집 및 활용
+
+(1) KANTI에서는 고객 식별, 구입 기록 관리, 선물 및 프로모션 상품 배송, 행사/신제품/세일즈 프로모션 안내, 내부 연구 및 분석 등을 포함하되 이에 국한되지 않은 범위에서 직접 마케팅 목적으로 위의 개인 정보를 활용할 수도 있습니다.	
+(2) 개인 정보에 대한 유지 관리 및 활용 약관은 위의 정보 활용 목적이 충족되는 시점에서 만료됩니다. KANTI가 현지 법률에 의해서 개인 정보를 유지해야 하는 경우 KANTI에서는 개인 정보를 유지하고 위에서 제시된 목적에 대해서만 해당 개인 정보를 활용해야 합니다. 
+(3) 저희는 eCard의 관리 및 전송 등과 같은 작업이나 향후 목적과 합당하게 관련된 기타 작업들을 위임할 수도 있습니다.
+(4) 고객은 이 정보 제공을 거부하거나 이용 약관에 동의할 권리를 보유합니다. 고객이 이 이용 약관의 동의를 거부하거나 반대할 경우 해당 고객은 이 약관의 '이용 목적'에 명시된 서비스들을 사용해서는 안되며  KANTI는 직접 마케팅 목적으로 개인 정보를 이용하지 않을 것입니다.
+</textarea></div>
+
+<br>
+<br>
+
+<p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<button type="submit"> 계정 생성 </button>
+</p></li>
+
+
+<li>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<img src="http://placehold.it/300x300" title="페이스북 로그인 안내 이미지"></li>
+
+
+</body>
+</html>

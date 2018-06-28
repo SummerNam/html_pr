@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>header_layout</title>
+<style>
+/*-----------------------------------------------------------reset*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+img {display:block;}
+
+/*-----------------------------------------------------------header*/
+#header {width:1000px; margin:0 auto;
+					background-color:lightgray;
+				   position:relative;
+				   z-index:1;}
+
+.left {float:left;}
+			
+.gnb_bar {overflow:hidden;
+					width:100%; float:right;}
+					
+			
+
+.gnb {overflow:hidden;
+			width:400px; float:right;
+			padding:10px;}
+
+.gnb li {width:100px; height:30px;
+			border:1px solid black; box-sizing:border-box;
+			text-align:center; line-height:30px;
+			float:left;}
+
+.gnb img {width:30px; height:30px;}
+			
+.logo {width:200px; padding:10px;}
+
+/* .lnb {overflow:hidden;} */
+			
+.lnb li {width:200px; height:50px;
+            box-sizing:border-box;
+			text-align:center; line-height:50px;
+			float:left;
+			background-color:pink; color:black;}
+			
+.lnb:after {content:''; display:block; clear:both;}
+
+.lnb li li {display:none;}
+.lnb li:hover li {display:block;}		
+
+.visual_main{width:1000px;
+						margin:10px auto;}	
+						
+/*-------------------------------------------------------popup*/
+
+
+#chk {display:none; position:absolute; left:2000px}
+#chk ~ .popup_window {display:none;}
+#chk:checked ~ .popup_window {display:block;}
+
+.popup_window {width:350px;
+								border:1px solid black;}
+
+.pop {background-color:gray;
+			padding:10px;
+			position:absolute; left:1550px; top:200px;
+			z-index:9998;}
+					
+</style>
+</head>
+
+
+
+
+
+
+<body>
+<!------------------------------------------pop up--->
+<div class="pop">
+<input type="checkbox" id="chk" >
+<label for="chk"><img src="search.jpg"></label>
+
+<div class="popup_window"> 
+		<div class="pop_img">
+        	<img src="color_candles.jpg">
+         </div>       
+</div>
+</div>
+
+
+<!------------------------------------------header--->
+
+<header id="header">
+       <ol class="left">
+       <div class="logo">
+  		  <img src="candlelogo.png">
+	   </div>
+       </ol>
+       
+      <ol>
+         <ul class="gnb">
+        	<li>회원가입</li>
+            <li>로그인</li>
+            <li>장바구니</li>
+            
+            <label for="keyword"> </label>
+            <input type="search" id="keyword" placeholder="search">
+         </ul>  		
+             <nav class="gnb_bar">    
+   			 </nav>
+	</ol>
+ 
+	<nav class="lnb_bar">
+    	<ul class="lnb">
+				<li>Candles
+                 	<ul>
+                    		<li>menu01_1 </li>
+                            <li>menu01_2 </li>
+                            <li>menu01_3 </li>
+                            <li>menu01_4 </li>
+                            <li>menu01_5 </li>
+                     </ul>
+                  </li>  
+                  
+			<li>Reed Diffusers
+                 	<ul>
+                    		<li>menu02_1 </li>
+                            <li>menu02_2 </li>
+                            <li>menu02_3 </li>
+                            <li>menu02_4 </li>
+                            <li>menu02_5 </li>
+                     </ul>
+                  </li>  
+ 			<li>Small Spaces
+                 	<ul>
+                    		<li>menu03_1 </li>
+                            <li>menu03_2 </li>
+                            <li>menu03_3 </li>
+                            <li>menu03_4 </li>
+                            <li>menu03_5 </li>
+                     </ul>
+                  </li>  
+			<li>Accessories
+                 	<ul>
+                    		<li>menu04_1 </li>
+                            <li>menu04_2 </li>
+                            <li>menu04_3 </li>
+                            <li>menu04_4 </li>
+                            <li>menu04_5 </li>
+                     </ul>
+                  </li>  
+                  
+			<li>Gift Sets
+                 	<ul>
+                    		<li>menu05_1 </li>
+                            <li>menu05_2 </li>
+                            <li>menu05_3 </li>
+                            <li>menu05_4 </li>
+                            <li>menu05_5 </li>
+                     </ul>
+                  </li>                       
+     
+     </ul>
+     </nav>
+</header>
+
+<div class="visual_main">
+		<img src="candle.jpg">
+</div>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user scalable=no">
+<title>mobile02</title>
+<style>
+* {margin:0; padding:0}
+li {list-style:none;}
+a {text-decoration:none; color:#933;}
+
+/*-----------------------------------------------------------------------------------header*/
+.indicator {width:100%; height:45px
+					position:relative;
+					background-image:url(img/header_background02.png)}
+					
+h1 {text-align:center; line-height:45px;
+		color:white;}
+
+label {width:32px; height:32px;
+			position:absolute; top:7px; right:7px;
+			text-indent:-9999px;
+			background-image:url(img/header_right_button.png);}
+
+.lnb {position:absolute; top:55px; right:10px;}
+.lnb li {width:65px; height:30px;
+			text-align:center; line-height:30px;
+			background-color:gray; color:white;
+			float:left;}
+
+#chk {display:none;}
+#chk ~ #header .lnb {display:none;}
+#chk:checked ~ #header .lnb {display:block;}
+
+/*-----------------------------------------------------------------------------------introduction */
+.intr {width:100%; font-size:15px;}
+.intr img {width:100%; height:auto;
+								display:block;}
+.intr2 {font-size:15px; margin-top:10px; padding:10px;}
+/*-----------------------------------------------------------------------------------body */
+h2 {padding:10px;}
+h3 {padding:5px;}
+
+.sec1 {width:100%}
+.sec1 .rl {width:50%; float:left;}
+.sec1 .rl img {width:100%; height:auto;
+						display:block;}
+						
+.tbl1 {margin:10px 10px;}
+
+
+/*-----------------------------------------------------------------------------------footer */
+h5 {color:lightgray; text-align:right;
+		margin-right:10px;}
+		
+@media only screen and (min-width:321px) and (orientation:landscape) {
+	.lnb {display:block;}
+	label {display:none;}
+	#chk ~ #header .lnb {display:block;}
+	
+	table {width:98%;}
+	
+	.bgimg {background-image:url(img/taylorbg.jpg);
+				background-size:100%;
+				width:100%; height:100%;}
+	}
+
+</style>
+</head>
+
+<body>
+	<input type="checkbox" id="chk">
+    
+<header id="header">
+	<div class="indicator">
+    	<h1>Talor Swift</h1>
+        <label for="chk" id="btn">toggle</label>
+    </div>
+
+	<nav class="lnb">
+    	<li>소개</li>
+        <li>인적</li>
+        <li>앨범</li>
+        <li>갤러리</li>
+    </nav>
+</header>
+
+
+<section class="bgimg">
+
+<h2>Information</h2>
+<div class="intr2">
+<h3>초기 생애 </h3>
+<hr>
+
+<div class="intr2">
+Taylor Alison Swift, 1989년 12월 13일, 펜실베이니아 주 레닝에서 태어나 와이오미싱에서 자랐다. 스위프트는 주부 안드레 가드너(옛 핀리이)와 증권 중개인 스콧 킹슬리 스위프트의 1남 1녀 중 장녀로 태어났다. 형제로는 남동생 오스틴이 있다. 스위프트의 외할머니 마조리 핀리이는 오페라 가수였다. 초등학교 4학년때는 전국백일장대회에서 "Monster in my closet"라는 시를 써 입상했다. 스위프트가 10살 때 컴퓨터 수리공이 기타치는 법을 보여 주어 관심을 갖게 되었다.</div>
+
+<div class="intr2">
+이후 스위프트는 "Lucky You"라는 첫 자작곡을 작곡했으며, 여느 또래와는 달리 컨트리 음악을 즐겨 들었다. 이후 스위프트는 고향 주변에서 가라오케 콘서트, 음악축제 등에 참가하고 공연을 열었다. 12살 여름방학에는 350쪽의 소설을 직접 쓰기도 했다. 또한, 스위프트는 Bloomsburg Fair라는 첫 무대에서 공연을 펼쳐 주목을 받기도 한다. 이후 Hendersonville 고등학교에 입학했으나 또래들과 음악취향이 다르다는 이유로 왕따를 당하기도 했거니와 학교 생활을 하면서 음악 작업을 하는데 어려움을 느껴서 음악에 집중하려는 의도로 홈스쿨링을 통해 수업을 받았다. 이후 2008년 졸업장을 받았다.</div>
+
+<div class="intr2">
+스위프트가 가장 큰 음악적 영감을 받은 가수는 샤니아 트웨인이었다. 스위프트는 또한 자신이 영감을 받은 가수로 리앤 라임즈, 티나 터너, 돌리 파튼, 할머니를 꼽았다. 할머니는 오페라를 주 장르로 삼는 가수였지만, 스위프트는 컨트리 장르를 더 좋아했고 배웠다. 스위프트는 어린 시절 팻시 클라인과 돌리 파튼의 열렬한 팬이기도 했다. 또한 딕시 칙스를 좋아해 "stretching boundaries"라는 노래를 특히 좋아했다.</div>
+</div>
+
+
+<div class="intr2">
+<h3>수상 및 후보 목록</h3>
+<hr>
+<div class="intr2">테일러 스위프트는 2009년에 아메리칸 뮤직 어워드에서 올해의 아티스트상, 빌보드 뮤직 어워드에서 올해의 아티스트상, 올해의 탑 컨트리 아티스트상, 올해의 탑 컨트리 앨범상을 수상했으며, 2010년에 그래미 어워드에서 올해의 앨범상, 최우수 컨트리 앨범상, 최우수 여성 컨트리 보컬상, 최우수 컨트리 노래상을 수상했다. 2012년에는 그래미 어워드에서 최우수 컨트리 솔로 퍼포먼스상을 수상하였다.</div> 
+
+<div class="intr2">2015년에는 빌보드 뮤직 어워드에서 8관왕을 달성하였다. 그 이외에도 스위프트는 어워드에서 총 281개의 수상을 했고, 후보에는 440번 이름을 올렸다. 스위프트는 그래미 어워드에서 10개, 아메리칸 뮤직 어워드에서 16개, 피플스 초이스상에서 8개, 빌보드 뮤직 어워드에서 25개의 상, 컨트리 뮤직 어워드에서 7개의 상, 아카데미 오브 컨트리 뮤직 어워드에서 6개의 상을 수상 했다. 2016년 그래미 어워드에서 올해의 앨범상, 베스트 보컬 팝 앨범상, 베스트 뮤직 비디오상을 수상하며 3관왕을 달성했다.</div>
+</div>
+
+<div class="intr2">
+<h3>출연작품 - Movie</h3>
+<hr>
+<table border="1px" align="center" bordercolorlight="#666666" class="tbl1">
+	<tr bgcolor="#CCCCCC">
+    	<th>연도</th>
+        <th>제목</th>
+        <th>역할</th>
+        <th>비고</th>    
+    </tr>
+    
+    <tr>
+    	<td>2009</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%EC%A1%B0%EB%82%98%EC%8A%A4_%EB%B8%8C%EB%9D%BC%EB%8D%94%EC%8A%A4_-_3D_%EC%BD%98%EC%84%9C%ED%8A%B8_%EA%B2%BD%ED%97%98">조나스 브라더스 - 3D 콘서트 경험</a></td>
+        <td>자신</td>
+        <td>카메오</td>
+	</tr>
+    
+    <tr>
+    	<td>2009</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%ED%95%9C%EB%82%98_%EB%AA%AC%ED%83%80%EB%82%98:_%EB%8D%94_%EB%AC%B4%EB%B9%84">한나 몬타나: 더 무비</a></td>
+        <td>자신</td>
+        <td>카메오</td>
+	</tr>
+    
+    <tr>
+    	<td>2010</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%EB%B0%9C%EB%A0%8C%ED%83%80%EC%9D%B8_%EB%8D%B0%EC%9D%B4_(2010%EB%85%84_%EC%98%81%ED%99%94)">발렌타인 데이</a></td>
+        <td>펠리시아</td>
+        <td>영화 데뷔작</td>
+	</tr>
+    
+    <tr>
+    	<td>2012</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%EB%A1%9C%EB%A0%89%EC%8A%A4_(%EC%98%81%ED%99%94)">로렉스</a></td>
+        <td>오드리</td>
+        <td>목소리</td>
+	</tr>
+    
+    <tr>
+    	<td>2014</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%EB%8D%94_%EA%B8%B0%EB%B2%84:_%EA%B8%B0%EC%96%B5%EC%A0%84%EB%8B%AC%EC%9E%90">더 기버: 기억전달자</a></td>
+        <td>로즈마리</td>
+        <td>조연</td>
+	</tr>
+</table>
+</div>
+
+<div class="intr2">
+<h3>출연작품 - TV</h3>
+<hr>
+<table border="1px" align="center" bordercolorlight="#666666" class="tbl1">
+	<tr bgcolor="#CCCCCC">
+    	<th>연도</th>
+        <th>제목</th>
+        <th>역할</th>
+        <th>비고</th>    
+    </tr>
+    
+    <tr>
+    	<td>2009</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%EC%83%88%ED%84%B0%EB%8D%B0%EC%9D%B4_%EB%82%98%EC%9D%B4%ED%8A%B8_%EB%9D%BC%EC%9D%B4%EB%B8%8C">새터데이 나이트 라이브</a></td>
+        <td>자신</td>
+        <td>호스트/음악 게스트; 2 에피소드</td>
+	</tr>
+    
+    <tr>
+    	<td>2009</td>
+        <td><a href="https://ko.wikipedia.org/wiki/CSI:_%EA%B3%BC%ED%95%99%EC%88%98%EC%82%AC%EB%8C%80">CSI: 과학수사대</a></td>
+        <td>헤일리 존스</td>
+        <td>에피소드: "Turn, Turn, Turn"</td>
+	</tr>
+    
+    <tr>
+    	<td>2012</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%ED%8E%91%ED%81%AC%EB%93%9C">펑크드</a></td>
+        <td>자신</td>
+        <td>에피소드: "Justin Bieber"</td>
+	</tr>
+    
+    <tr>
+    	<td>2013</td>
+        <td><a href="https://ko.wikipedia.org/wiki/%EB%89%B4_%EA%B1%B8">뉴 걸</a></td>
+        <td>일레인</td>
+        <td>에피소드: "Elaine's Big Day"</td>
+	</tr>
+</table>
+</div>
+
+
+<h2>Reference Link</h2>
+<section class="sec1">
+<div class="rl rl1">
+	<a href="https://ko.wikipedia.org/wiki/%ED%85%8C%EC%9D%BC%EB%9F%AC_%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8">
+    <img src="img/taylor2.png">
+    </a>
+</div> 
+
+<div class="rl rl2">   
+    <a href="https://www.google.co.kr/search?biw=1920&bih=925&ei=p-cwW8j_HdmB-Qbu9qr4CQ&q=%ED%85%8C%EC%9D%BC%EB%9F%AC+%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8&oq=%ED%85%8C%EC%9D%BC%EB%9F%AC+%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8&gs_l=psy-ab.3..0i67k1j0l9.3405.3405.0.3684.1.1.0.0.0.0.121.121.0j1.1.0....0...1.1.64.psy-ab..0.1.120....0.OmktBpcO854">
+    <img src="img/taylor3.png">
+    </a>
+</div>
+</section>
+
+</section>
+
+
+<footer>
+	<div class="indicator">
+		<h5> Copyright @2018 Hajeong Jeon </h5>
+    </div>
+</footer>
+
+</body>
+</html>

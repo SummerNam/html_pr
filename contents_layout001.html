@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contents_layout001</title>
+<style>
+/*-----------------------------------------------------------------reset */
+* {margin:0; padding:0;}
+li {list-style:none;}
+img {display:block; text-decoration:none;}
+
+
+body {width:1000px;
+			margin:0 auto;}
+/*-----------------------------------------------------------------header */
+#header {overflow:hidden;}
+
+.logo {width:200px; height:200px;
+			float:left;
+			margin:0 10px}
+			
+.nav_search {width:770px; height:200px;
+						float:left;
+						margin-right:10px;
+						background-color:lightgray;}
+
+
+.gnb_bar {overflow:hidden;}
+
+.gnb {overflow:hidden;
+			float:right;}
+
+.gnb li {width:100px; height:30px;
+			text-align:center; line-height:30px;
+			float:left;
+			border:1px solid black; box-sizing:border-box;}
+			
+.search_bar {overflow:hidden;
+						margin-top:10px;}
+
+.box {width:300px; height:30px;
+			text-align:center; line-height:30px;
+			float:right;
+			border:1px solid black; box-sizing:border-box;}
+			
+			
+			
+/*-----------------------------------------------------------------lnb*/
+.lnb_bar {margin:10px 0;}
+
+.lnb:after {content:'';
+					display:block;
+					clear:both;}
+					/* 주의할 것 */
+
+.lnb li{width:200px; height:50px;
+			text-align:center; line-height:50px;
+			float:left;
+			background-color:purple; color:white;}
+
+
+/*-----------------------------------------------------------------visual main */			
+.visual_main {width:800px;
+						margin:0 auto;}
+
+
+
+/*-----------------------------------------------------------------event */
+.event {overflow:hidden;
+              padding:50px 0;
+			  background-color:violet;}	
+
+.eve{width:300px; height:300px;
+		float:left;
+		border:1px solid black; box-sizing:border-box;}
+		
+.eve02 {margin:0 50px;} 
+
+</style>
+</head>
+
+<body>
+<header id="header">
+	<div class="logo">
+    	<img src="200.jpg">
+    </div>
+    
+    <div class="nav_search">
+    	<nav class="gnb_bar">
+     		<ul class="gnb">
+     			<li>gnb01</li>
+                <li>gnb02</li>
+				<li>gnb03</li>
+				<li>gnb04</li>
+     		</ul>
+     </nav>
+     
+     <div class="search_bar">
+     		<div class="box">
+            	search_box
+             </div>
+       </div>
+    </div>
+</header>
+
+<nav class="lnb_bar">
+	<ul class="lnb">
+    		<li>menu01</li>
+    		<li>menu02</li>
+            <li>menu03</li>
+            <li>menu04</li>
+            <li>menu05</li>
+	</ul>
+</nav>
+
+<div class="visual_main">
+	<img src="800_400.jpg">
+</div>
+
+<section class="event">
+	<div class="eve eve01">
+    	event01
+    </div>
+    <div class="eve eve02">
+    	event02
+    </div>
+    <div class="eve eve03">
+    	event03
+    </div>
+</section>
+
+</body>
+</html>
+
+

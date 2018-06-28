@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>background</title>
+<style>
+/* ----------------------------------------------------------------reset */
+* {margin:0; padding:0;}
+
+/*-----------------------------------------------------------------contents */
+.gradient {width:300px; height:300px;
+					background:linear-gradient(-45deg, red, yellow,red); } 
+					/* or radial-gradient(red, yellow,red) */
+
+
+section {overflow:hidden;}
+/* 원용도 : 박스사이즈보다 내부 콘텐츠 내용이 더 많을 때 박스 밖으로 넘어 간 것들은 보이지 않게 하는 것 */
+
+section div{border:1px solid black; float:left; margin:10px;}
+					
+.img01 { width:100px; height:100px;
+				background-image:url(300.jpg);
+				background-size:100% 100%;}
+
+.img02 { width:300px; height:300px;
+				background-image:url(300.jpg);}
+
+.img03 { width:500px; height:500px;
+				background-image:url(300.jpg);
+				background-size:100% 100%;}
+				
+.img04{ width:200px; height:400px;
+				background-image:url(300.jpg);
+				background-size:contain;}
+				
+.img05{ width:400px; height:200px;
+				background-image:url(300.jpg);
+				background-size:cover;}
+				
+
+</style>
+</head>
+
+<body>
+<div class="gradient">
+	gradient
+</div>
+
+<section class="back_img">
+	<div class="img01">
+     	img01
+     </div>
+     
+     <div class="img02">
+     	img02
+     </div>
+     
+     <div class="img03">
+     	img03
+     </div>
+</section>
+
+
+<section class="back_img01">
+	<div class="img04">
+    img04
+    </div>
+    
+    <div class="img05">
+    img05
+    </div>
+
+</section>
+
+</body>
+</html>

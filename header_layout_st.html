@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>assignment_header</title>
+<style>
+/*----------------------- reset -----------------------*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+img {display:block;}
+
+/*----------------------- header -----------------------*/
+#header {width:1280px;
+		 background-color:#F9F9F9;
+		 margin:0 auto;
+		 color:#414141; font-family:맑은고딕, 나눔고딕, Verdana, Geneva, sans-serif;
+		 position:relative;
+		 z-index:1;}
+
+.logo_n_gnb {overflow:hidden;}
+
+.logo {width:200px; height:100px;
+	   border:1px solid black; box-sizing:border-box;
+	   float:left;
+	   text-align:center; line-height:100px;
+	   margin-bottom:10px;}
+
+.gnb_box {overflow:hidden;}
+
+.gnb_bar {float:right;}	
+
+.gnb {width:350px;
+	  overflow:hidden;}
+
+.gnb li {width:70px; height:20px;
+		 text-align:center; line-height:20px;
+		 font-size:14px;
+		 float:left;
+		 border-right:1px solid grey; box-sizing:border-box;}
+		 
+.search {width:250px; height:30px;
+		 text-align:center; line-height:30px; font-size:14px;
+		 float:right;
+		 margin-top:20px;}
+		 
+.search li {float:left;
+		   text-align:center; line-height:30px;
+		   border:1px solid grey; box-sizing:border-box;}
+		 
+.search_1 {width:180px; height:30px;}
+		   
+.search_2 {width:70px; height:30px;}
+
+.lnb_bar:after {content:''; display:block; clear:both;}
+
+.lnb_bar li {width:256px; height:50px;
+			 text-align:center; line-height:50px;
+			 float:left;}
+
+.lnb_bar li li {width:256px; height:50px;
+				background-color:#F9F9F9;
+				text-align:center; line-height:50px; font-size:14px; color:#5C5C5C;
+				float:left;
+				display:none;}
+				
+.lnb_bar:hover li li {display:block;}				
+				
+/*----------------------- popup -----------------------*/
+.popup {width:300px; height:400px;
+		position:absolute; top:160px; right:0;
+		z-index:9999;}
+		
+.btn {width:22px; height:40px;
+	  position:absolute; top:160px; right:0;
+	  z-index:99999;}
+	  
+#chk {display:none;}
+
+#chk ~ .popup {display:none;}
+
+#chk:checked ~ .popup {display:block;}
+
+/*----------------------- contents -----------------------*/
+.new_img {width:1280px;
+		  margin:20px auto;}
+
+</style>
+</head>
+
+
+<body>
+<!----------------------- popup ----------------------->
+
+<input type="checkbox" id="chk">
+<label for="chk"> <img src="assignment_header_img/arrow.png" class="btn"> </label>
+
+<div class="popup">
+	<img src="assignment_header_img/popup_01.jpg">
+</div>  
+
+
+<!----------------------- header ----------------------->
+<header id="header">
+
+<section class="logo_n_gnb">
+
+	<div class="logo">
+	logo
+	</div>
+    
+<div class="gnb_box">
+	<nav class="gnb_bar">
+    	<ul class="gnb">
+    		<li> login </li>
+            <li> join </li>
+            <li> mypage </li>
+            <li> order </li>
+            <li> Q&amp;A </li>
+        </ul>
+        
+        <ul class="search">
+			<li class="search_1"> search, here! </li>
+            <li class="search_2"> btn </li>
+        </ul>   	      
+	</nav>
+</div>
+
+</section>
+
+
+	<nav class="lnb_bar">
+    	<ul>
+        	<li> BRAND
+            	<ul>
+                	<li> brand_1 </li>
+                    <li> brand_2 </li>
+                    <li> brand_3 </li>
+                </ul>
+           </li>
+            <li> PRODUCT
+            	<ul>
+                	<li> product_1 </li>
+                    <li> product_2 </li>
+                    <li> product_3 </li>
+                </ul>
+           </li>
+            <li> REVIEW
+            	<ul>
+                	<li> review_1 </li>
+                    <li> review_2 </li>
+                    <li> </li>
+                </ul>
+           </li>
+            <li> EVENT
+            	<ul>
+                	<li> event_1 </li>
+                    <li> event_2 </li>
+                    <li> </li>
+                </ul>
+           </li>
+            <li> COMMUNITY
+            	<ul>
+                	<li> community_1 </li>
+                    <li> community_2 </li>
+                    <li> community_3 </li>
+                </ul>
+           </li>
+        </ul>
+	</nav>
+</header>
+
+<div class="new_img">
+	<img src="assignment_header_img/lookbook_03.jpg">
+</div>
+
+</body>
+</html>

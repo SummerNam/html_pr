@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>fullsize</title>
+<style>
+/*--------------------------------------------------- reset*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+/*--------------------------------------------------- header*/
+.lnb2 {width:100%;
+		background-color:black;
+		overflow:hidden;}
+
+.lnb2>ul {width:650px; margin:0 auto; float:right;}
+
+.lnb2 li{width:100px; height:30px;
+			text-align:center; line-height:30px;
+			background-color:black; color:white;
+			float:left; font-size:11px;
+			cursor:pointer;}			
+			
+			
+#header { width:1000px; margin:0 auto; overflow:hidden;}
+		
+.firsth {width:1000px; margin:0 auto; overflow:hidden;}
+
+.firsth1 {overflow:hidden;
+				width:576px; float:left;}
+
+.firsth1 li {width:96px; height:40px;
+			box-sizing:border-box;
+			text-align:center; line-height:40px;
+			float:left;}
+
+.firsth2 {overflow:hidden;
+			width:390px; float:right;}
+			
+.firsth2 li {width:130px; height:40px;
+			box-sizing:border-box;
+			text-align:center; line-height:40px;
+			float:left;}
+			
+
+
+.logo {width:220px; height:70px; margin:0 auto;
+			cursor:pointer;}
+
+
+/*---------------------------------------------------제품 검색 */
+.search_bar {overflow:hidden;}
+									
+#keyword {width:100px; height:30px;
+			text-align:center; line-height:30px;
+			border:1px solid lightgray; box-sizing:border-box;
+			position:relative; margin-left:10px;
+			border-radius:3px;
+			color:gray;}
+			
+
+
+/*--------------------------------------------------- visual_main*/
+.visual_ex {width:100%; background-color:#FFF;
+					margin-bottom:20px;}
+
+.visual_main {width:1000px; margin:0 auto;}
+
+
+/*--------------------------------------------------- image*/
+.image1 {width:100%;
+		 		background-color:black;
+				overflow:hidden;
+				margin-bottom:30px;}
+
+.image {width:1890px; margin:0 auto;}
+
+.image>ul {width:1890px; margin:0 auto; float:right;}
+
+.image li{background-color:black;
+			float:left; cursor:pointer;}
+
+
+/*--------------------------------------------------- image*/
+.img01 {width:1000px; margin:0 auto; overflow:hidden;}
+.img01>li {float:left;}
+
+.img02 {width:1000px; margin:0 auto;
+				margin-top:25px;}
+.img02>li {float:left;}		
+
+.margin1 {margin-right:125px}
+
+.margin2 {margin-left:125px}
+
+
+/*--------------------------------------------------- image2*/
+.image2 {width:1000px; margin:0 auto;}
+.ovrflw {overflow:hidden;}
+					
+.image2 img {float:left;
+						cursor:pointer;}
+.mrg {margin: 0 50px}
+
+.text {width:1000px; margin:0 auto;
+				overflow:hidden; margin-bottom:50px}
+.text>li {float:left; text-align:center;
+				margin-top:10px;}			
+.text00 {margin-left:130px;}
+.text01 {margin-left:230px;}		
+
+/*--------------------------------------------------- image3*/
+.image3 {width:1000px; margin:0 auto;
+				overflow:hidden;}
+					
+.image3 img {float:left;
+						cursor:pointer; margin-top:10px}
+.mrg4 {margin-left:43.75px;}
+.margin3 {margin-right:155px}
+.margin4 {margin-left:155px}
+
+.text2 {width:1000px; margin:0 auto;
+				overflow:hidden; margin-bottom:20px}
+.text2>li {float:left; box-sizing:border-box;
+				width:165px; height:65px;
+				text-align:center;}
+.text02 {margin-left:43.75px;}
+				
+.text3 {width:1000px; margin:0 auto;
+				overflow:hidden; margin-bottom:50px}
+.text3>li {float:left; line-height:25px;
+				text-align:center;
+				width:165px; height:25px;
+				background-color:#CCC; color:#333;
+				border:1px solid #999; box-sizing:border-box;
+				border-radius:2px;}
+.text03 {margin-left:43.75px;}				
+
+/*--------------------------------------------------- hr*/
+hr {width:1000px; margin:0 auto;}
+
+
+/*--------------------------------------------------- sns*/
+.sns {width:1000px; margin:0 auto;
+				overflow:hidden;}					
+.sns img {float:left;
+						cursor:pointer; margin-top:70px;}
+						
+.sns2 {width:1000px; margin:0 auto;
+				overflow:hidden;}					
+.sns2 img {float:left;
+						cursor:pointer; margin-top:50px;}						
+.mrg5 {margin: 0 50px}
+
+
+
+/*--------------------------------------------------- footer*/
+.footwing {width:100%; background-color:black;
+					margin-top:70px;}
+.footer {width:1000px; margin:0 auto;
+			background-color:black;
+			overflow:hidden;}
+				
+								
+.firstf {width:100%; overflow:hidden;}
+
+.firstf1 {overflow:hidden;
+				width:400px; float:left;}
+
+.firstf1 li {width:100px; height:40px;
+			box-sizing:border-box;
+			text-align:center; line-height:40px;
+			float:left;
+			color:white;}
+
+.firstf2 {overflow:hidden;
+			width:300px; float:right;}
+			
+.firstf2 li {width:150px; height:40px;
+			box-sizing:border-box;
+			text-align:center; line-height:40px;
+			float:left;
+			color:white;}
+			
+
+.footwing2 {width:100%; background-color:#933;}
+.footer2 {width:1000px; margin:0 auto;
+			background-color:#933;
+			overflow:hidden;}
+												
+.secondf {width:100%; overflow:hidden;}
+
+.secondf1 {overflow:hidden;
+				width:200px; float:left;}
+
+.secondf1 li {width:200px; height:30px;
+			box-sizing:border-box;
+			text-align:center; line-height:30px;
+			float:left;
+			color:white;}
+
+.secondf2 {overflow:hidden;
+			width:150px; float:right;}
+			
+.secondf2 li {width:150px; height:30px;
+			box-sizing:border-box;
+			text-align:center; line-height:30px;
+			float:left;
+			color:white;}
+</style>
+</head>
+
+<body>
+	<nav class="lnb2">
+    	<ul>
+        	<li>로그인</li>
+             <li>아넷사 마끼아쥬</li>
+         </ul>
+       </nav>
+
+
+<div class="logo">
+<img src="img/sise1.png">
+</div>
+
+
+
+<header id="header">
+    	<ul class="firsth1">
+	     	 
+             <li><b>SKINCARE</b></li>            
+             <li><b>SUNCARE</b></li>           
+             <li><b>MAKEUP</b></li>             
+             <li><b>FRAGRANACE</b></li>           
+             <li><b>MEN</b></li>
+             <li><b>BODY&amp;HAIR</b></li>   
+		</ul>
+
+		<ul class="firsth2">
+            <li><b>BRAND</b></li>         
+            <li><b>STORE&nbsp;LOCATOR</b></li>
+
+            <li>            
+            <div class="search_bar">
+     		<div class="box">
+            <label for="keyword"> </label>
+            <input type="search" id="keyword" placeholder="제품 검색">
+             </div></div>
+             </li>           
+		</ul>
+</header>
+
+
+
+
+<div class="visual_ex">
+	<div class="visual_main">
+    	<img src="img/sisemain.png">
+     </div>
+</div>
+
+
+<section class="image1">
+	<div class="image">
+    	<ul>
+        	<li><img src="img/siseido1.png"></li>
+             <li><img src="img/siseido2.png"></li>
+       		 <li><img src="img/siseido3.png"></li>
+             <li><img src="img/siseido4.png"></li>
+         </ul>
+       </div>
+</section>
+
+<div class="img01">
+		<li><img class="margin1" src="img/siseline (1).jpg"></li>
+		<li>Campaign &amp; Event</li>
+		<li><img class="margin2" src="img/siseline (2).jpg"></li>
+</div>
+
+<div class="ovrflw">
+<section class="image2">
+	<img src="img/siseido5.jpg"> 
+	<img class="mrg" src="img/siseido6.jpg">
+	<img src="img/siseido7.jpg">
+</section>
+</div>
+
+<div class="text">
+<li><b>Synchro Skin Cushion Compact</b></li>
+<li class="text00"><b>Ultimune Serum</b></li>
+<li class="text01"><b>All Day Brightener N SPF 50+</b></li>
+</div>
+
+<div class="img02">
+	<li><img class="margin3" src="img/siseline (1).jpg"></li>
+	<li>Best sellers</li>
+	<li><img class="margin4" src="img/siseline (2).jpg"></li>
+</div>
+
+
+
+<section class="image3">
+	<img src="img/sisepro (1).jpg">
+	<img class="mrg4" src="img/sisepro (2).jpg">
+	<img class="mrg4" src="img/sisepro (3).jpg">
+	<img class="mrg4" src="img/sisepro (4).jpg">
+	<img class="mrg4" src="img/sisepro (5).jpg">
+</section>
+
+<div class="text2">
+<li>ULTIMUNE<br>
+얼티뮨 파워 인퓨징 컨센트 레이트</li>
+<li class="text02">WHITE LUCENT<br>
+마이크로 타겟팅 스팟 코렉터</li>
+<li class="text02">퍼펙트 UV 프로텍터</li>
+<li class="text02">퍼펙트 UV 프로텍터 S</li>
+<li class="text02">싱크로 스킨 글로우 쿠션 컴팩트</li>
+</div>
+
+<div class="text3">
+<li>상세보기</li>
+<li class="text03">상세보기</li>
+<li class="text03">상세보기</li>
+<li class="text03">상세보기</li>
+<li class="text03">상세보기</li>
+</div>
+
+
+
+<hr color="#999999" noshade>
+
+<section class="sns">
+	<img src="img/siseido8.jpg">
+    <img class="mrg5" src="img/siseido9.jpg">
+    <img src="img/siseido10.jpg">
+</section>
+
+<section class="sns2">
+	<img src="img/siseido11.jpg">
+    <img class="mrg5" src="img/siseido12.jpg">
+    <img src="img/siseido13.jpg">   
+</section>
+
+<footer>
+<div class="footwing">
+<div class="footer">
+	<nav class="firstf">
+    	<ul class="firstf1">     	 
+			<li>고객문의</li>
+             <li>FAQ</li>
+             <li>개인정보취급방침</li>
+             <li>이용약관</li>  
+		</ul>
+
+		<ul class="firstf2">
+             <li>(주) 한국시세이도</li>
+             <li>국가를 선택하세요</li>
+		</ul>
+	</nav>
+</div>
+</div>
+
+<div class="footwing2">
+<div class="footer2">
+	<nav class="secondf">
+    	<ul class="secondf1">     	 
+        	<li>Follow us : Facebook</li>
+		</ul>
+
+		<ul class="secondf2">
+          <li>SHISEIDO CO. LTD</li>
+		</ul>
+	</nav>
+</div>
+</div>
+</footer>
+
+</body>
+</html>

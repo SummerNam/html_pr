@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user scalable=no">
+<title>mobile_003_pr</title>
+
+<style>
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+/*------------------------------------------------------header */
+.indicator {width:100%; height:45px;
+					background-image:url(img/header_background.png);
+					position:relative;}
+
+.home {position:absolute;
+				width:62px; height:32px;
+				background-image:url(img/header_left_button.png);
+				text-indent:-9999px;
+				top:7px; left:7px;}
+
+h1 {text-align:center; line-height:45px;}
+
+label {width:32px; height:32px;
+			background-image:url(img/header_right_button.png);
+			position:absolute; top:7px; right:7px;
+			text-indent:-9999px;}
+
+.lnb {position:absolute; top:45px; right:0}
+.lnb li {width:200px; height:30px;
+			text-align:center; line-height:30px;
+			background-color:lightgray; color:black;}
+
+.gnb li {width:20%; height:30px;
+			text-align:center; line-height:30px;
+			background-color:gray; color:white;
+			float:left;}
+
+#chk {display:none;}
+#chk ~ #header .lnb {display:none;}
+#chk:checked ~ #header .lnb {display:block;}
+
+
+</style>
+</head>
+
+<body>
+	<input type="checkbox" id="chk">
+    
+<header id="header">
+	<div class="indicator">
+    	<div class="home">home</div>
+    	<h1>mobile</h1>
+        <label for="chk" id="btn">toggle</label>
+    </div>
+
+	<nav class="lnb">
+    	<li>lnb1</li>
+        <li>lnb2</li>
+        <li>lnb3</li>
+        <li>lnb4</li>
+    </nav>
+    
+    <gnb class="gnb">
+    	<li>gnb1</li>
+        <li>gnb2</li>
+        <li>gnb3</li>
+        <li>gnb4</li>
+        <li>gnb5</li>
+    </gnb>
+    
+
+</header>
+</body>
+</html>

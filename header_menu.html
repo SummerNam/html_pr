@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>menu_05</title>
+<style>
+/*------------------------------------------------------------reset */
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+/*---------------------------------------------------------------*/
+#header {width:1000px;
+			background-color:#ccc;
+			margin:0 auto;
+			position:relative;} /*id를 쓰면 #*/
+
+.gnb_bar {width:1000px;
+				  overflow:hidden;}
+
+.gnb {width:400px; height:30px;
+		box-sizing:border-box;
+		float:right;}
+		
+.logo {width:200px; height:200px;
+		border:1px solid black; box-sizing:border-box;
+		margin:10px auto;
+		line-height:200px; text-align:center;}
+		
+.lnb {width:1000px; height:50px;
+	   border:1px solid black;
+	  margin:0 auto;}
+
+/*------------------------------------------------------------nav */
+ul{width:1000px; margin:0 auto;
+	background-color:#ccc; color:black;
+	float:left;
+	cursor:pointer;}
+	
+ul>li{width:250px; height:50px;
+	background-color:#ccc; color:black;
+	text-align:center; line-height:50px;
+	float:left;}	
+
+ol {width:400px; margin:0 auto;
+	background-color:#ccc; color:black;}	
+
+ol>li {width:100px; height:30px;
+	 	background-color:#ccc; color:black;
+		float: right;
+		cursor:pointer;}
+
+li li {background-color:gray; color:white;
+		display:none;}
+
+li:hover li {display:block;}
+
+
+
+</style>
+</head>
+
+<body>
+<header id="header">
+
+<div class="gnb_bar">
+	<nav class="gnb">
+     <ol>
+     		<li> gnb01</li>
+            <li> gnb02</li>
+            <li> gnb03</li>
+            <li> gnb04</li>
+     </ol>
+    </nav>
+</div>
+    
+    <div class="logo">
+    	logo
+    </div>
+    
+    <nav class="lnb">
+    <ul>
+	<li> menu01
+    	<ul>
+        	<li> menu01_01 </li>
+            <li> menu01_02 </li>
+            <li> menu01_03 </li>
+            <li> menu01_04 </li>
+         </ul>
+        </li>
+        
+        <li> menu02
+    	<ul>
+        	<li> menu02_01 </li>
+            <li> menu02_02 </li>
+            <li> menu02_03 </li>
+            <li> menu02_04 </li>
+         </ul>
+        </li>
+        
+        <li> menu03
+    	<ul>
+        	<li> menu03_01 </li>
+            <li> menu03_02 </li>
+            <li> menu03_03 </li>
+            <li> menu03_04 </li>
+         </ul>
+        </li>
+        
+        <li> menu04
+    	<ul>
+        	<li> menu04_01 </li>
+            <li> menu04_02 </li>
+            <li> menu04_03 </li>
+            <li> menu04_04 </li>
+         </ul>
+        </li>
+       </ul>
+
+</nav>    
+</header>
+
+</body>
+</html>

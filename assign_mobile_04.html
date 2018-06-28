@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user scalable=no">
+<title>mobile04</title>
+<style>
+* {margin:0; padding:0}
+li {list-style:none;}
+a {text-decoration:none; color:#933;}
+
+/*-----------------------------------------------------------------------------------header*/
+.indicator {width:100%; height:45px
+					position:relative;
+					background-image:url(img/header_background02.png)}
+					
+h1 {text-align:center; line-height:45px;
+		color:white;}
+
+label {width:32px; height:32px;
+			position:absolute; top:7px; right:7px;
+			text-indent:-9999px;
+			background-image:url(img/header_right_button.png);}
+
+.lnb {position:absolute; top:55px; right:10px;}
+.lnb li {width:65px; height:30px;
+			text-align:center; line-height:30px;
+			background-color:gray; color:white;
+			float:left;}
+
+#chk {display:none;}
+#chk ~ #header .lnb {display:none;}
+#chk:checked ~ #header .lnb {display:block;}
+
+/*-----------------------------------------------------------------------------------introduction */
+.intr {width:100%; font-size:15px;}
+.intr img {width:100%; height:auto;
+								display:block;}
+.intr2 {font-size:15px; margin-top:10px; padding:10px;}
+
+/*-----------------------------------------------------------------------------------body */
+h2 {padding:10px;}
+h3 {padding:5px;}
+
+.sec1 {width:100%}
+.sec1 .rl {width:50%; float:left;}
+.sec1 .rl img {width:100%; height:auto;
+						display:block;}	
+/*-----------------------------------------------------------------------------------image */		
+.sctn {width:98%; margin:1%}		
+
+.sctn .box img {width:98%; height:auto;
+								margin:1%;
+								display:block;}
+/*-----------------------------------------------------------------------------------footer */
+h5 {color:lightgray; text-align:right;
+		margin-right:10px;}
+	
+@media only screen and (min-width:321px) and (orientation:landscape) {
+	.lnb {display:block;}
+	label {display:none;}
+	#chk ~ #header .lnb {display:block;}
+	
+	.sctn .box {width:48%; float:left;
+						 margin:1%; height:250px;}
+
+	}
+
+</style>
+</head>
+
+<body>
+	<input type="checkbox" id="chk">
+    
+<header id="header">
+	<div class="indicator">
+    	<h1>Talor Swift</h1>
+        <label for="chk" id="btn">toggle</label>
+    </div>
+
+	<nav class="lnb">
+    	<li>소개</li>
+        <li>인적</li>
+        <li>앨범</li>
+        <li>갤러리</li>
+    </nav>
+</header>
+
+<h2>Gallery</h2>
+
+<section class="sctn">
+	<div class="box box01">
+		<img src="img/taylor1.jpg">
+	</div>
+    
+   <div class="box box02">
+		<img src="img/taylor5.jpg">
+	</div>
+</section>
+
+<section class="sctn">
+	<div class="box box03">
+		<img src="img/taylor6.jpg">
+	</div>
+    
+   <div class="box box04">
+		<img src="img/taylor7.jpg">
+	</div>
+</section>
+
+<section class="sctn">
+	<div class="box box05">
+		<img src="img/taylor8.jpg">
+	</div>
+    
+   <div class="box box06">
+		<img src="img/taylor9.jpg">
+	</div>
+</section>
+
+<section class="sctn">
+	<div class="box box07">
+		<img src="img/taylor10.jpg">
+	</div>
+    
+   <div class="box box08">
+		<img src="img/taylor11.jpg">
+	</div>
+</section>
+
+
+
+<h2>Reference Link</h2>
+<section class="sec1">
+<div class="rl rl1">
+	<a href="https://ko.wikipedia.org/wiki/%ED%85%8C%EC%9D%BC%EB%9F%AC_%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8">
+    <img src="img/taylor2.png">
+    </a>
+</div> 
+
+<div class="rl rl2">   
+    <a href="https://www.google.co.kr/search?biw=1920&bih=925&ei=p-cwW8j_HdmB-Qbu9qr4CQ&q=%ED%85%8C%EC%9D%BC%EB%9F%AC+%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8&oq=%ED%85%8C%EC%9D%BC%EB%9F%AC+%EC%8A%A4%EC%9C%84%ED%94%84%ED%8A%B8&gs_l=psy-ab.3..0i67k1j0l9.3405.3405.0.3684.1.1.0.0.0.0.121.121.0j1.1.0....0...1.1.64.psy-ab..0.1.120....0.OmktBpcO854">
+    <img src="img/taylor3.png">
+    </a>
+</div>
+</section>
+
+
+
+<footer>
+	<div class="indicator">
+		<h5> Copyright @2018 Hajeong Jeon </h5>
+    </div>
+</footer>
+	
+</body>
+</html>

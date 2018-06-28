@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>header_layout</title>
+<style>
+/*-----------------------------------------------------------reset*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+img {display:block;}
+
+/*-----------------------------------------------------------header*/
+#header {width:1000px; margin:0 auto;
+					background-color:lightgray;
+				   position:relative;
+				   z-index:1;}
+					
+.gnb_bar {width:100%;
+					overflow:hidden;}
+
+.sns {overflow:hidden;
+		width:120px;
+		float:left;}
+
+.sns li {width:30px; height:30px;
+			border:1px solid black; box-sizing:border-box;
+			text-align:center; line-height:30px;
+			float:left;}
+
+.gnb {overflow:hidden;
+			width:400px; float:right;}
+
+.gnb li {width:100px; height:30px;
+			border:1px solid black; box-sizing:border-box;
+			text-align:center; line-height:30px;
+			float:left;}
+			
+.logo {width:200px;
+			margin:10px auto;}
+
+/* .lnb {overflow:hidden;} */
+			
+.lnb li {width:200px; height:50px;
+			border:1px solid black; box-sizing:border-box;
+			text-align:center; line-height:50px;
+			float:left;}
+			
+.lnb:after {content:''; display:block; clear:both;}
+
+.lnb li li {display:none;}
+.lnb li:hover li {display:block;}		
+
+.visual_main{width:800px;
+						margin:10px auto;}	
+						
+/*-------------------------------------------------------popup*/
+#chk {display:none;}
+#chk ~ .popup_window {display:none;}
+#chk:checked ~ .popup_window {display:block;}
+
+.popup_window {width:500px;
+								border:1px solid black;
+								background-color:gray;
+								padding:10px;
+								position:absolute; left:50px; top:50px;
+								z-index:9999;}
+		
+					
+</style>
+</head>
+
+
+
+
+
+
+<body>
+<!------------------------------------------pop up--->
+<input type="checkbox" id="chk" checked>
+
+<div class="popup_window">
+		<div class="pop_img">
+        	<img src="고양이카페.jpg">
+         </div>
+         <label for="chk">닫기 <img src="btn_x.jpg"></label>
+</div>
+
+
+
+
+
+<!------------------------------------------header--->
+
+<header id="header">
+	<nav class="gnb_bar">
+    	<ul class="sns">
+        	<li>f</li>
+            <li>i</li>
+            <li>t</li>
+            <li>c</li>
+        </ul>
+        
+        <ul class="gnb">
+        	<li>gnb01</li>
+            <li>gnb02</li>
+            <li>gnb03</li>
+            <li>gnb04</li>
+         </ul>  
+    </nav>
+    
+    <div class="logo">
+  		  <img src="200.jpg">
+	</div>
+
+	<nav class="lnb_bar">
+    	<ul class="lnb">
+				<li>menu_01
+                 	<ul>
+                    		<li>menu01_1 </li>
+                            <li>menu01_2 </li>
+                            <li>menu01_3 </li>
+                            <li>menu01_4 </li>
+                            <li>menu01_5 </li>
+                     </ul>
+                  </li>  
+                  
+			<li>menu_02
+                 	<ul>
+                    		<li>menu02_1 </li>
+                            <li>menu02_2 </li>
+                            <li>menu02_3 </li>
+                            <li>menu02_4 </li>
+                            <li>menu02_5 </li>
+                     </ul>
+                  </li>  
+ 			<li>menu_03
+                 	<ul>
+                    		<li>menu03_1 </li>
+                            <li>menu03_2 </li>
+                            <li>menu03_3 </li>
+                            <li>menu03_4 </li>
+                            <li>menu03_5 </li>
+                     </ul>
+                  </li>  
+			<li>menu_04
+                 	<ul>
+                    		<li>menu04_1 </li>
+                            <li>menu04_2 </li>
+                            <li>menu04_3 </li>
+                            <li>menu04_4 </li>
+                            <li>menu04_5 </li>
+                     </ul>
+                  </li>  
+                  
+			<li>menu_05
+                 	<ul>
+                    		<li>menu05_1 </li>
+                            <li>menu05_2 </li>
+                            <li>menu05_3 </li>
+                            <li>menu05_4 </li>
+                            <li>menu05_5 </li>
+                     </ul>
+                  </li>                       
+     
+     </ul>
+     </nav>
+</header>
+
+<div class="visual_main">
+		<img src="800_400.jpg">
+</div>
+
+</body>
+</html>

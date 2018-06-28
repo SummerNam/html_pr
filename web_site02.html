@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+/*-------------------------------------------------------reset*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+/*-------------------------------------------------------header*/
+#header { width:1200px; margin:0 auto;}
+.post1 {width:350px; height:350px;
+				margin:0 auto;}
+				
+				
+				
+				
+.firsth {width:100%; overflow:hidden;}
+
+.firsth1 {overflow:hidden;
+				width:340px; float:left;}
+
+.firsth1 li {width:170px; height:40px;
+			box-sizing:border-box;
+			text-align:center; line-height:40px;
+			float:left;}
+
+.firsth2 {overflow:hidden;
+			width:700px; float:right;}
+			
+.firsth2 li {width:170px; height:40px;
+			box-sizing:border-box;
+			text-align:center; line-height:40px;
+			float:left;}
+			
+
+
+.secondh {width:100%; overflow:hidden;}
+
+.secondh1 {overflow:hidden;
+				width:190px; float:left;}
+
+.secondh1 li {width:190px; height:50px;
+			box-sizing:border-box;
+			text-align:center; line-height:50px;
+			float:left;}
+
+.secondh2 {overflow:hidden;
+			width:600px; float:right;}
+			
+.secondh2 li {width:100px; height:50px;
+			box-sizing:border-box;
+			text-align:center; line-height:50px;
+			float:left;}
+
+	
+/*-------------------------------------------------------body*/	
+.sec1 {width:1200px; margin:0 auto;
+			overflow:hidden;}				
+.body1 img {cursor:pointer;}
+			
+.body1_1 {float:left;}
+.body1_2 {float:left;}
+.body1_3 {float:left;}
+
+/*.sec2 {overflow:hidden;
+			width:1143px; margin:0 auto;}
+.body2 div {float:left;} */
+
+.div1 {width:380px; height:320px; 
+			background-color:lightgray;
+			box-sizing:border-box;}
+.div2 {width:380px; height:220px;
+			background-color:white;
+			box-sizing:border-box;}
+.div3 {width:383px; height:268px;
+			box-sizing:border-box;}
+
+/*-------------------------------------------------------sheet tap*/	
+#chk01, #chk02, #chk03 {display:none;}
+
+#chk01 ~ .sheet01 {display:none;}
+#chk01:checked ~ .sheet01 {display:block;}
+
+#chk02 ~ .sheet02 {display:none;}
+#chk02:checked ~ .sheet02 {display:block;}
+
+#chk03 ~ .sheet03 {display:none;}
+#chk03:checked ~ .sheet03 {display:block;}
+
+
+.title {overflow:hidden;}
+
+label {width:126px; height:50px;
+			background-color:white; color:gray;
+			text-align:center; line-height:50px;
+			display:block; float:left;}
+
+#chk01:checked ~ .title .btn01{background-color:white; color:red; text-decoration:underline;}
+#chk02:checked ~ .title .btn02{background-color:white; color:red; text-decoration:underline;}
+#chk03:checked ~ .title .btn03{background-color:white; color:red; text-decoration:underline;}
+
+.sheet {width:126px; height:170px;
+				background-color:white; color:black;
+				font-size:16px;
+				text-align:center; line-height:170px;}
+
+.center {width:350px; margin:0 auto;}
+
+
+.backgrd_clr {background-color:lightgray;}
+
+/*-------------------------------------------------------footer*/
+
+.sec3 {overflow:hidden;}
+.body3 {background-color:red; color:white;}
+.body3>ul {width:1000px; height:50px;
+			margin:0 auto;}
+.body3 li {text-align:center; line-height:50px;
+					width:120px; font-size:14px;
+					float:left;
+					cursor:pointer;}
+.color {background-color:#F60;}
+
+
+.sec4 {width:1500px; margin:0 auto;}
+.sec4 img{cursor:pointer;}
+
+.body4 {width:1000px; margin:0 auto;}
+.body4 img {float:left;}
+
+.body5 {width:1000px; margin:0 auto;}
+.body5 img {float:left;}
+
+
+.sec5 {width:1899px; margin:0 auto;}
+
+img {cursor:pointer;}
+
+
+/*-------------------------------------------------------table*/
+table {border-collapse:collapse;
+			border-spacing:0;
+			border:5px solid #999}
+td {cursor:pointer;}
+.clr {color:white;}
+.go {width:100px; height:35px;
+		text-align:center; line-height:35px;
+		border:1px solid white;
+		color:white;}
+.go:hover {width:100px; height:35px;
+		text-align:center; line-height:35px;
+		border:1px solid white; background-color:#F60;
+		color:white;}
+						
+
+						
+</style>
+</head>
+
+<body>
+
+
+<header id="header">
+	<nav class="firsth">
+    	<ul class="firsth1">
+			<li><img src="img/gnb1.jpg"></li>
+			<li><img src="img/gnb2.jpg"></li>
+		</ul>
+
+		<ul class="firsth2">
+			<li>사이트맵</li>  
+            <li>ENGLISH</li>
+			<li><img src="img/gnb3.jpg"></li>
+			<li><img src="img/gnb4.jpg"></li>
+		</ul>
+</nav>
+<br>
+<hr color="#999999" noshade>
+
+
+	<nav class="secondh">
+    	<ul class="secondh1">
+			<li><img src="img/logo.jpg"></li>
+		</ul>
+
+		<ul class="secondh2">
+			<li>사업분야</li>  
+            <li>열린경영</li>
+			<li>고객참여</li>
+			<li>우정소식</li>
+            <li>정부3.0</li>
+            <li>기관소개</li>            
+		</ul>
+</nav>
+</header>
+
+
+
+
+
+<section class="backgrd_clr">
+<div class="post1"> <br>
+<br>
+<br>
+<br>
+
+<img src="img/post5.png"> &nbsp; &nbsp;
+<img src="img/post6.png"> &nbsp; &nbsp;
+<img src="img/post7.png"> &nbsp; &nbsp;
+<br>
+우편번호검색 &nbsp; &nbsp;
+배송 조회 &nbsp; &nbsp; &nbsp;
+우체국 찾기 &nbsp; &nbsp;
+</div>
+
+
+<section class="sec1">
+<div class="body1">
+ 	<div class="body1_1">
+    <div> <img src="img/post1.png"></div>
+ 	<div class="div1">
+     <table width="380px" height="320px" cellspacing="0" cellpadding="0" border="1px">
+      <tr align="center" bgcolor="white"> 
+       <td width="92.5px" height="77.5px">서울청</td>
+       <td width="92.5px" height="77.5px">경인청</td>
+       <td width="92.5px" height="77.5px">부산청</td>
+       <td width="92.5px" height="77.5px">충청청</td>
+      </tr>
+     <tr align="center" bgcolor="white"> 
+       <td width="92.5px" height="77.5px">전남청</td>
+       <td rowspan="2" colspan="2" align="center" bgcolor="#FF3300"><h3 class="clr">소속기관</h3><br>
+       <div class="go">바로가기</div>
+		</td>
+       <td width="92.5px" height="77.5px">경북청</td>
+      </tr>
+     <tr align="center" bgcolor="white"> 
+       <td width="92.5px" height="77.5px">전북청</td>
+       <td width="92.5px" height="77.5px">강원청</td>
+      </tr>
+      <tr align="center" bgcolor="white"> 
+       <td width="92.5px" height="77.5px">제주청</td>
+       <td width="92.5px" height="77.5px"> <span>우정공무원</span><br> 교육원</td>
+       <td width="92.5px" height="77.5px"> <span>우정사업</span><br> 정보센터</td>
+       <td width="92.5px" height="77.5px"> <span>우정사업</span><br> 조달센터</td>
+      </tr>
+     </table>
+     </div>
+  	</div>
+    
+	<div class="body1_2">
+ 		<div> <img src="img/post2.png"></div>
+  		<div class="div2">
+		<input type="radio" id="chk01" name="tap" checked>
+		<input type="radio" id="chk02" name="tap">
+		<input type="radio" id="chk03" name="tap">
+
+		<div class="title">
+		<label for="chk01" class="btn01"> 공지 </label>
+    	<label for="chk02" class="btn02"> 채용</label>
+    	<label for="chk03" class="btn03"> 인사</label>
+		</div>  
+    <hr color="#666666" noshade width="350px" class="center">
+    
+	<div class="sheet sheet01">공지</div>
+	<div class="sheet sheet02">채용</div>
+	<div class="sheet sheet03">인사</div>
+    </div>
+  
+    
+</div>
+    
+ 	<div class="body1_3">
+ 	<div> <img src="img/post3.png"></div>
+	<div class="div3"><img src="img/post4.png"></div>
+	</div>
+</div>
+</section>
+
+<br>
+<br>
+<br>
+</section>
+
+<footer class="sec3">
+<div class="body3">
+	<ul>
+    	<li><b>개인정보처리방침</b></li>
+        <li>제한적본인확인제/I-PIN제도</li>
+        <li>이용약관</li>
+        <li>찾아오시는길</li>
+        <li>뷰어다운로드</li>
+        <li>우체국위젯</li>
+        <li>우정총국</li>
+        <li class="color"><H4>전화안내</H4></li>
+	</ul>
+</div>
+</footer>
+
+<footer class="sec4">
+<div class="body4">
+	<div><img src="img/postfooter1.png" width="200px" height="50px"></div>
+	<div><img src="img/postfooter2.png" width="200px" height="50px"></div>
+	<div><img src="img/postfooter3.png" width="200px" height="50px"></div>
+	<div><img src="img/postfooter4.png" width="200px" height="50px"></div>
+	<div><img src="img/postfooter5.png" width="200px" height="50px"></div>
+</div>
+<div class="body5">
+	<div><img src="img/postfooter6.jpg" width="200px" height="50px"></div>
+	<div><img src="img/postfooter7.jpg" width="200px" height="50px"></div>
+	<div><img src="img/postfooter8.jpg" width="200px" height="50px"></div>
+	<div><img src="img/postfooter9.jpg" width="200px" height="50px"></div>
+	<div><img src="img/postfooter10.jpg" width="200px" height="50px"></div>
+</div>
+</footer>
+
+<footer class="sec5">
+<div><img src="img/postfooter.png"></div>
+</footer>
+
+</body>
+</html>

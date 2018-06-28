@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>margin_padding</title>
+<style>
+/*--------------------------------------reset---------------------------------*/
+* {margin:0; padding:0;}
+li {list-style:none;}
+
+/*--------------------------------------nav-------------------------------------*/
+ul {width:1000px;
+	margin:0 auto;}                    /* 박스형 태그의 수평 가운데 정렬(단, 대상콘텐츠의 width 필수)*/
+
+li {width:200px; height:50px;
+	background-color:black ; color:white;
+	text-align:center; line-height:50px;
+	 
+	/*  텍스트의 정렬(수평가운데정렬 : text-align
+	 ,수직가운데 정렬은 존재하지 않음 > 박스의 높이와 줄 높이를 같게 해서 수직가운데 정렬처럼 보이게 한다
+	 즉 height와 line-height를 같게 준다.)  */
+	 
+	float:left;}
+	
+li {padding:10px; box-sizing:border-box;}                       /* 안쪽으로 padding */
+
+</style>
+
+</head>
+
+<body>
+
+<ul>
+ <li> menu01 </li>
+ <li> menu02 </li>
+ <li> menu03 </li>
+ <li> menu04 </li>
+ <li> menu05 </li>
+</ul>
+
+</body>
+</html>
